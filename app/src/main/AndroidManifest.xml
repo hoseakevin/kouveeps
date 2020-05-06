@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developervishalsehgal.constraintlayoutchallenge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/petshop"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/petshop"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".cs.keranjang"></activity>
+        <activity android:name=".cs.add_rekapan" />
+        <activity android:name=".cs.rekap_cs" />
+        <activity android:name=".cs.data_customer" />
+        <activity android:name=".cs.add_customer" />
+        <activity android:name=".cs.update_customer" />
+        <activity android:name=".admin.add_produk" />
+        <activity android:name=".admin.data_produk" />
+        <activity android:name=".admin.update_produk" />
+        <activity android:name=".admin.data_supplier" />
+        <activity android:name=".admin.add_supplier" />
+        <activity android:name=".admin.update_supplier" />
+        <activity android:name=".admin.data_layanan" />
+        <activity android:name=".admin.add_layanan" />
+        <activity android:name=".admin.update_layanan" />
+
+        <activity
+            android:name=".cs.update_rekapan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity_cs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

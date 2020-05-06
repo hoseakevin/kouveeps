@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                style="@style/headerText"
+                android:text="Menu Apps"
+                android:layout_marginBottom="20dp"/>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/produk">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/petshop"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="DATA PRODUK" />
+
+                <TextView
+                    android:text="TAMBAH DATA PRODUK"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/layanan">
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    android:src="@drawable/panduan"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="DATA LAYANAN JASA" />
+
+                <TextView
+                    android:text="TAMBAH DATA LAYANAN"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/ukuran">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/size"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="DATA UKURAN" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="TAMBAH DATA UKURAN" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/jenis">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/jenis"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="DATA JENIS HEWAN" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="TAMBAH DATA JENIS HEWAN" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/supplier">
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    android:src="@drawable/lock"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:text="DATA SUPPLIER" />
+
+                <TextView
+                    android:text="TAMBAH DATA SUPPLIER"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout"
+                android:onClick="onButtonClick"
+                android:id="@+id/logout">
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    android:src="@drawable/logout"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="KELUAR"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="KELUAR APLIKASI" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

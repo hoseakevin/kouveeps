@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PET SHOP</string>
+    <string name="quot_if_you_love_the_technology_then_why_you_aren_t_coding_quot">\"If you love the technology, then why you aren\'t coding.\"</string>
+    <string name="developer_ui_ux_designer">Developer | UI/UX Designer</string>
+    <string name="vishal_sehgal">Vishal Sehgal</string>
+    <string name="india">India</string>
+
+    <string-array name="semester">
+        <item>silahkan pilih</item>
+        <item>Genap</item>
+        <item>Ganjil</item>
+    </string-array>
+
+    <string-array name="thn_ajaran">
+        <item>silahkan pilih</item>
+        <item>2018/2019</item>
+        <item>2019/2020</item>
+        <item>2020/2021</item>
+        <item>2021/2022</item>
+        <item>2022/2023</item>
+    </string-array>
+</resources>

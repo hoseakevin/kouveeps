@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity_cs"
+    tools:showIn="@layout/activity_main_ks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:text="Menu Apps"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:onClick="onButtonClick"
+            android:id="@+id/hewan">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:src="@drawable/hewan"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="DATA HEWAN" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="TAMBAH DATA HEWAN" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:onClick="onButtonClick"
+            android:id="@+id/penjualan">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:src="@drawable/panduan"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="TRANSAKSI PRODUK" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="TAMBAH TRANSAKSI PRODUK" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:onClick="onButtonClick"
+            android:id="@+id/customer">
+            <ImageView
+                android:id="@+id/nImageView"
+                android:src="@drawable/file"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nImageView"
+                android:text="DATA CUSTOMER" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nImageView"
+                android:text="TAMBAH DATA CUSTOMER" />
+
+        </RelativeLayout>
+
+<!--        <View style="@style/proifleDetailsView" />-->
+<!--        <RelativeLayout style="@style/profileDetailsLayout"-->
+<!--            android:onClick="onButtonClick"-->
+<!--            android:id="@+id/guru">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/emailImageView"-->
+<!--                android:src="@drawable/akun"-->
+<!--                style="@style/profileDetailsImage" />-->
+
+<!--            <TextView-->
+<!--                android:text="DATA PENILAIAN"-->
+<!--                android:layout_toRightOf="@id/emailImageView"-->
+<!--                style="@style/profileDetailsTextMain" />-->
+
+<!--            <TextView-->
+<!--                android:text="rekap data penilaian"-->
+<!--                android:layout_toRightOf="@id/emailImageView"-->
+<!--                style="@style/profileDetailsMiniText" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <View style="@style/proifleDetailsView" />-->
+<!--        <RelativeLayout style="@style/profileDetailsLayout"-->
+<!--            android:onClick="onButtonClick"-->
+<!--            android:id="@+id/grafik">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/tes"-->
+<!--                android:src="@drawable/grafik"-->
+<!--                style="@style/profileDetailsImage" />-->
+
+<!--            <TextView-->
+<!--                android:text="GRAFIK PENILAIAN"-->
+<!--                android:layout_toRightOf="@id/tes"-->
+<!--                style="@style/profileDetailsTextMain" />-->
+
+<!--            <TextView-->
+<!--                android:text="rekap grafik penilaian"-->
+<!--                android:layout_toRightOf="@id/tes"-->
+<!--                style="@style/profileDetailsMiniText" />-->
+
+<!--        </RelativeLayout>-->
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:onClick="onButtonClick"
+            android:id="@+id/logout">
+            <ImageView
+                android:id="@+id/addressImageView"
+                android:src="@drawable/logout"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="KELUAR"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="KELUAR DARI APLIKASI" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
